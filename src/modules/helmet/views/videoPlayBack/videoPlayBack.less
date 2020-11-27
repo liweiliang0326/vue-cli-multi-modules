@@ -1,0 +1,67 @@
+.video_play_back {
+  .wh(100%, 100%);
+
+  p {
+    margin: 0;
+  }
+
+  .main {
+    .project_name_box {
+      // height: 50px;
+      height: 8vh;
+      padding: 0 15px;
+      border-bottom: 1px solid #d7d7d7;
+
+      .project_name {
+        color: #333;
+        // font-size: 18px;
+        font-size: 3vh;
+        font-weight: 700;
+      }
+    }
+
+    .project_data_box {
+      height: 92vh;
+
+      .table_box {
+        width: 35%;
+
+        .table_module_box {
+          height: calc(100% - 100px);
+          width: 100%;
+          overflow-y: hidden;
+          margin-bottom: 20px;
+        }
+
+        .pagination {
+          text-align: center;
+        }
+      }
+
+      .content_box {
+        width: 65%;
+        // min-height: 800px;
+        height: 92vh;
+        background: #000;
+        position: fixed;
+        // top: 50px;
+        top: 8vh;
+        right: 0;
+
+        #tcplayer_box {
+          .wh(660px, 440px);
+          // position: absolute;
+          // left: 0;
+          // right: 0;
+          // top: 0;
+          // bottom: 0;
+          // margin: auto;
+
+          video {
+            .wh(100%, auto);
+          }
+        }
+      }
+    }
+  }
+}

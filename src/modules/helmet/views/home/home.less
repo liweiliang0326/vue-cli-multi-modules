@@ -1,0 +1,87 @@
+.home {
+  .wh(100%, 100%);
+  background: #f2f2f2;
+
+  .main {
+    .search_box {
+      padding: 10px 15px;
+      background: #fff;
+
+      & > div {
+        padding: 0 15px;
+      }
+
+      .search_btn {
+        margin-left: 30px;
+      }
+    }
+
+    .project_list {
+      width: 100%;
+      padding: 10px;
+
+      .project_item {
+        width: 23%;
+        height: 180px;
+        background: #fff;
+        margin: 10px;
+        border-radius: 4px;
+        box-shadow: 0 0 4px 2px #e4e4e4;
+
+        .project_logo_name {
+          width: 100%;
+          padding: 15px;
+
+          .project_logo {
+            width: 35px;
+            margin-right: 15px;
+          }
+
+          .project_name {
+            margin: 0;
+            color: #000;
+            font-size: 14px;
+            font-weight: bolder;
+            // .lines-hidden(2);
+          }
+        }
+
+        .project_data_list {
+          width: 100%;
+          padding: 15px 0;
+          text-align: center;
+
+          .project_data_item {
+            width: 32%;
+            // background: cyan;
+
+            p {
+              margin: 0;
+            }
+
+            .num {
+              font-family: 'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;
+              font-size: 24px;
+              font-weight: 700;
+              color: rgba(245, 154, 35, 0.65);
+              .line-hidden();
+            }
+          }
+        }
+      }
+    }
+
+    .no_data_box{
+      .wh(300px, 500px);
+      margin: 0 auto;
+    }
+
+    .pagination {
+      // padding-right: 30px;
+      text-align: right;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+    }
+  }
+}

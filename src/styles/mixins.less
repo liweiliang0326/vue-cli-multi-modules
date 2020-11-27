@@ -1,0 +1,52 @@
+/* 通用mixins */
+@image-path: "@/assets/images/";
+@v: "20201125";
+
+// 宽高
+.wh(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+// 背景图
+.bg-img(@url, @dirc1, @dirc2, @bgw, @bgh, @repeat) {
+  background: url('@{image-path}@{url}') @dirc1 @dirc2 @repeat;
+  background-size: @bgw @bgh;
+}
+
+// 渐变背景色
+.bg-color(@dirc, @color1, @color2) {
+  background-color: @color1;
+  background: linear-gradient(to @dirc, @color1, @color2);
+}
+
+// 单行超出隐藏为省略号
+.line-hidden() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// 多行超出隐藏为省略号
+.lines-hidden(@line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+// 底部 伪类 边框 1px
+.after-1px(@color, @top, @right, @bottom, @left) {
+  content: '';
+  height: 1px;
+  background: @color;
+  position: absolute;
+  left: @left;
+  right: @right;
+  top: @top;
+  bottom: @bottom;
+  margin: auto;
+  transform: scaleY(0.5);
+}
